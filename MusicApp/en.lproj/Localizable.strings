@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  MusicApp
+
+  Created by Lauv Edward on 28/07/2021.
+  
+*/
+"home" = "Home";
+"library" = "Library";
+"search" = "Search";
+"setting" = "Setting";
