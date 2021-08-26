@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class StartViewController: UIViewController {
 
     @IBOutlet weak var parentStackView: UIStackView!
@@ -44,6 +45,7 @@ class StartViewController: UIViewController {
     }
 }
 
+@available(iOS 13.0, *)
 extension StartViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
@@ -69,6 +71,7 @@ extension StartViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
+@available(iOS 13.0, *)
 extension StartViewController {
     func addTranparentview(frame: CGRect) {
         let window = UIApplication.shared.keyWindow

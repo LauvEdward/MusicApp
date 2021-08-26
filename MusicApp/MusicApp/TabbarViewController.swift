@@ -7,23 +7,45 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class TabbarViewController: UITabBarController {
-    
-    var homeVC: HomeViewController!
-    var library: LibraryViewController!
-    var search: SearchViewController!
-    var setting: SettingViewController!
+    private var homeVC: HomeViewController!
+    private var library: LibraryViewController!
+    private var search: SearchViewController!
+    private var setting: SettingViewController!
+    private var playMusicView = PlayMusicTabbar()
+    var isPlay: Bool! {
+        didSet {
+            if isPlay {
+                self.view.addSubview(playMusicView)
+            } else {
+                if let viewWithTag = self.view.viewWithTag(1) {
+                        viewWithTag.removeFromSuperview()
+                    }
+            }
+        }
+    }
+//    private var playMusicView: UIView = {
+//        let view = UIView()
+//        view.tag = 1
+//        view.backgroundColor = .blue
+//        return view
+//    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
         self.tabBar.tintColor = UIColor.white
-        self.tabBar.isTranslucent = false
+        self.tabBar.alpha = 1
         UITabBar.appearance().barTintColor = UIColor.grayColorMain // your color
-
+        isPlay = true
+        playMusicView.frame = CGRect(x: self.tabBar.frame.minX, y: self.view.frame.height - 2 * self.tabBar.frame.size.height, width: self.tabBar.frame.width, height: self.tabBar.frame.height)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapPlayMusicView))
+        playMusicView.addGestureRecognizer(tap)
         homeVC = HomeViewController()
         homeVC.tabBarItem.title = "home".localized
         homeVC.tabBarItem.image = UIImage(named: "home_icon")
+        homeVC.delegate = self
         library = LibraryViewController()
         library.tabBarItem.title = "library".localized
         library.tabBarItem.image = UIImage(named: "library_icon")
@@ -36,8 +58,15 @@ class TabbarViewController: UITabBarController {
         
         self.viewControllers = [homeVC, library, search, setting]
     }
+    
+    @objc func tapPlayMusicView() {
+        let vc = PlayMusicViewController()
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 
+@available(iOS 13.0, *)
 extension TabbarViewController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if viewController.isKind(of: TabbarViewController.self) {
@@ -47,5 +76,12 @@ extension TabbarViewController: UITabBarControllerDelegate {
             return false
         }
         return true
+    }
+}
+
+@available(iOS 13.0, *)
+extension TabbarViewController: callbackTabbar {
+    func callback() {
+        self.isPlay = !self.isPlay
     }
 }
