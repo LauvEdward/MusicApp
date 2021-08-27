@@ -43,6 +43,7 @@
 		5F7CC26426CA6E2700C47C23 /* AlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7CC26226CA6E2700C47C23 /* AlbumCell.xib */; };
 		5F7CC26826CA6EC000C47C23 /* AlbumsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7CC26626CA6EC000C47C23 /* AlbumsCollectionCell.swift */; };
 		5F7CC26926CA6EC000C47C23 /* AlbumsCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7CC26726CA6EC000C47C23 /* AlbumsCollectionCell.xib */; };
+		5F879BD526D8D224007EEE08 /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F879BD426D8D224007EEE08 /* Notification+Extension.swift */; };
 		5FE472D926B18906009B4EE7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FE472DB26B18906009B4EE7 /* Localizable.strings */; };
 		5FE8DC2426D499AE000A04F5 /* PlayMusicTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8DC2326D499AE000A04F5 /* PlayMusicTabbar.swift */; };
 		5FE8DC2626D49A61000A04F5 /* PlayMusicTabbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FE8DC2526D49A61000A04F5 /* PlayMusicTabbar.xib */; };
@@ -88,6 +89,7 @@
 		5F7CC26226CA6E2700C47C23 /* AlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCell.xib; sourceTree = "<group>"; };
 		5F7CC26626CA6EC000C47C23 /* AlbumsCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCollectionCell.swift; sourceTree = "<group>"; };
 		5F7CC26726CA6EC000C47C23 /* AlbumsCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumsCollectionCell.xib; sourceTree = "<group>"; };
+		5F879BD426D8D224007EEE08 /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
 		5FE472DA26B18906009B4EE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5FE472DC26B1891F009B4EE7 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5FE8DC2326D499AE000A04F5 /* PlayMusicTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicTabbar.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				5F536D0426AC7AE7002DCA16 /* UIColor+Extension.swift */,
 				5F536D1A26AD32F8002DCA16 /* UIView+Extension.swift */,
 				5F536D1C26ADEA6D002DCA16 /* String+Extension.swift */,
+				5F879BD426D8D224007EEE08 /* Notification+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				5F536D1726AD0A6B002DCA16 /* UserDefaultsDataStore.swift in Sources */,
 				5F536CF726AC45A0002DCA16 /* LibraryViewController.swift in Sources */,
 				5F536D0526AC7AE7002DCA16 /* UIColor+Extension.swift in Sources */,
+				5F879BD526D8D224007EEE08 /* Notification+Extension.swift in Sources */,
 				5F536D1D26ADEA6D002DCA16 /* String+Extension.swift in Sources */,
 				5F2830FD26B91C6F00D57C6D /* PlayMusicViewController.swift in Sources */,
 				5F536D1526AD09ED002DCA16 /* UserPreferences.swift in Sources */,

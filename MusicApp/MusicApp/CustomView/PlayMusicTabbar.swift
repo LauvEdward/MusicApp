@@ -40,7 +40,6 @@ class PlayMusicTabbar: UIView {
         } else {
             MusicController.share.play()
         }
-        MusicController.share.isPlay = !MusicController.share.isPlay
     }
     
     func setupView() {
@@ -62,8 +61,4 @@ class PlayMusicTabbar: UIView {
             imageSong.image = imageSound.image(at: CGSize(width: imageSong.frame.size.width, height: imageSong.frame.size.height))
         }
     }
-}
-
-extension Notification.Name {
-    static let SetViewPlayMusic = Notification.Name("setviewplaymusic")
 }

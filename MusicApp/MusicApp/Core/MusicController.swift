@@ -17,7 +17,7 @@ class MusicController {
     }
     func play() {
         isPlay = true
-        self.musicPlayer.prepareToPlay()
+//        self.musicPlayer.prepareToPlay()
         self.musicPlayer.play()
     }
     
