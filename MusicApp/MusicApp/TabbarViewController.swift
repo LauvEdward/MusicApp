@@ -39,7 +39,7 @@ class TabbarViewController: UITabBarController {
         self.tabBar.alpha = 1
         UITabBar.appearance().barTintColor = UIColor.grayColorMain // your color
         isPlay = true
-        playMusicView.frame = CGRect(x: self.tabBar.frame.minX, y: self.view.frame.height - 2 * self.tabBar.frame.size.height, width: self.tabBar.frame.width, height: self.tabBar.frame.height)
+        playMusicView.frame = CGRect(x: self.tabBar.bounds.minX, y: self.view.bounds.height - 2 * self.tabBar.bounds.size.height, width: self.tabBar.bounds.width, height: self.tabBar.bounds.height)
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapPlayMusicView))
         playMusicView.addGestureRecognizer(tap)
         homeVC = HomeViewController()

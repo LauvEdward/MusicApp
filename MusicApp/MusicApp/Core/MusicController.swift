@@ -26,7 +26,12 @@ class MusicController {
         self.musicPlayer.pause()
     }
     
+    func playNext() {
+        
+    }
+    
     func setSong(song: SongInfo) {
         self.song = song
     }
+    
 }

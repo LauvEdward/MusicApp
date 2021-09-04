@@ -88,3 +88,23 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+Icon\r
+MusicApp/Icon\r
+MusicApp/en.lproj/Icon\r
+MusicApp/MusicApp/Icon\r
+MusicApp/MusicApp/API/Icon\r
+MusicApp/MusicApp/Base.lproj/Icon\r
+MusicApp/MusicApp/Core/Icon\r
+MusicApp/MusicApp/CustomView/Icon\r
+MusicApp/MusicApp/Extensions/Icon\r
+MusicApp/MusicApp/Model/Icon\r
+MusicApp/MusicApp/PlayMusicController/Icon\r
+MusicApp/MusicApp/ViewController/Icon\r
+MusicApp/MusicApp/ViewController/Home/Icon\r
+MusicApp/MusicApp/ViewController/Library/Icon\r
+MusicApp/MusicApp/ViewController/Library/ItemCell/Icon\r
+MusicApp/MusicApp/ViewController/Library/ItemCell/AlbumCollectionCell/Icon\r
+MusicApp/MusicApp/ViewController/PlayMusic/Icon\r
+MusicApp/MusicApp/ViewController/Search/Icon\r
+MusicApp/MusicApp/ViewController/Setting/Icon\r
+MusicApp/vi.lproj/Icon\r
