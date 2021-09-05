@@ -39,7 +39,13 @@ class TabbarViewController: UITabBarController {
         self.tabBar.alpha = 1
         UITabBar.appearance().barTintColor = UIColor.grayColorMain // your color
         isPlay = true
-        playMusicView.frame = CGRect(x: self.tabBar.bounds.minX, y: self.view.bounds.height - 2 * self.tabBar.bounds.size.height, width: self.tabBar.bounds.width, height: self.tabBar.bounds.height)
+//        playMusicView.frame = CGRect(x: self.tabBar.frame.minX, y: self.tabBar.frame.maxY - 2 * self.tabBar.bounds.height - bottomBarOffset, width: self.tabBar.frame.width, height: self.tabBar.frame.height)
+//        self.view.addSubview(<#T##view: UIView##UIView#>)
+        playMusicView.translatesAutoresizingMaskIntoConstraints = false
+        playMusicView.bottomAnchor.constraint(equalTo: self.tabBar.topAnchor).isActive = true
+        playMusicView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
+        playMusicView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
+        playMusicView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapPlayMusicView))
         playMusicView.addGestureRecognizer(tap)
         homeVC = HomeViewController()
@@ -71,7 +77,7 @@ extension TabbarViewController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if viewController.isKind(of: TabbarViewController.self) {
             let vc = HomeViewController()
-            vc.modalPresentationStyle = .fullScreen
+            vc.modalPresentationStyle = .overCurrentContext
             self.present(vc, animated: true, completion: nil)
             return false
         }

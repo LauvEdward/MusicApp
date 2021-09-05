@@ -74,20 +74,20 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7gW-ta-aqh">
-                    <rect key="frame" x="0.0" y="114" width="414" height="748"/>
+                    <rect key="frame" x="0.0" y="114" width="414" height="782"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <viewLayoutGuide key="safeArea" id="3cf-kp-dek"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="hek-8O-cue" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ET0-tK-8ys"/>
-                <constraint firstItem="7gW-ta-aqh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Flq-Kx-Gss"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7gW-ta-aqh" secondAttribute="bottom" id="Hgs-hM-0tv"/>
+                <constraint firstItem="hek-8O-cue" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ET0-tK-8ys"/>
+                <constraint firstItem="7gW-ta-aqh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Flq-Kx-Gss"/>
+                <constraint firstAttribute="bottom" secondItem="7gW-ta-aqh" secondAttribute="bottom" id="Hgs-hM-0tv"/>
                 <constraint firstItem="7gW-ta-aqh" firstAttribute="top" secondItem="hek-8O-cue" secondAttribute="bottom" id="ONK-D8-Aba"/>
-                <constraint firstItem="hek-8O-cue" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Tf2-eu-CWt"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hek-8O-cue" secondAttribute="trailing" id="vBy-un-SoV"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7gW-ta-aqh" secondAttribute="trailing" id="w0c-Xt-jx3"/>
+                <constraint firstItem="hek-8O-cue" firstAttribute="top" secondItem="3cf-kp-dek" secondAttribute="top" id="Tf2-eu-CWt"/>
+                <constraint firstAttribute="trailing" secondItem="hek-8O-cue" secondAttribute="trailing" id="vBy-un-SoV"/>
+                <constraint firstAttribute="trailing" secondItem="7gW-ta-aqh" secondAttribute="trailing" id="w0c-Xt-jx3"/>
             </constraints>
             <point key="canvasLocation" x="7" y="80"/>
         </view>
